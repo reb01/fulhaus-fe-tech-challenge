@@ -39,7 +39,7 @@ const Wrapper = styled.div`
   height: 1968px;
   background: #f7efe7;
   align-items: center;
-  margin-left: 10px;
+
   @media (max-width: 1348px) {
     height: 2468px;
   }

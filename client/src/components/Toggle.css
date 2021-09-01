@@ -9,7 +9,7 @@
   width: 616px;
   background: #ffffff;
   transition: all 0.3s ease-in-out;
-  transform: translate(616px);
+  transform: translate(916px);
   position: fixed;
   z-index: 1000;
 }
