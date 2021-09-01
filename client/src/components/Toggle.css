@@ -1,0 +1,41 @@
+/** @format */
+
+.Drawer__Container {
+  position: absolute;
+  height: 100%;
+  overflow-y: scroll;
+  left: 824px;
+  top: 80px;
+  width: 616px;
+  background: #ffffff;
+  transition: all 0.3s ease-in-out;
+  transform: translate(616px);
+  position: fixed;
+  z-index: 1000;
+}
+.Drawer__Container--isOpen {
+  transform: translate(0);
+}
+.container {
+  position: relative;
+}
+.container .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 385px;
+  display: none;
+  color: #fff;
+}
+.container:hover .after {
+  display: block;
+  width: 380px;
+  height: 385px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 40px;
+  margin-left: 34px;
+  margin-right: 34px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
