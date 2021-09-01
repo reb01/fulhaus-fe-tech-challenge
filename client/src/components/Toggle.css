@@ -13,6 +13,13 @@
   position: fixed;
   z-index: 1000;
 }
+
+@media screen and (min-width: 1457px) {
+  .Drawer__Container {
+    width: 816px;
+  }
+}
+
 .Drawer__Container--isOpen {
   transform: translate(0);
 }
