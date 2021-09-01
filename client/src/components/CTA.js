@@ -20,7 +20,7 @@ export default CTA;
 
 const CTAWRrapper = styled.div`
   border-top: 1px solid black;
-  width: 1372px;
+  width: 94vw;
   height: 316px;
   display: flex;
   flex-direction: column;
@@ -28,10 +28,11 @@ const CTAWRrapper = styled.div`
   justify-content: center;
   background: #003941;
   margin-bottom: 47px;
+  z-index: 1;
 
-  @media (max-width: 1370px) {
+  /* @media (max-width: 1370px) {
     width: 100vw;
-  }
+  } */
 `;
 const CTAText = styled.div`
   width: 768px;

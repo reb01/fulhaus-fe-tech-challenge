@@ -35,29 +35,33 @@ export default App;
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 1440px;
+  width: 100vw;
   height: 1968px;
   background: #f7efe7;
-
+  align-items: center;
+  margin-left: 10px;
   @media (max-width: 1348px) {
     height: 2468px;
   }
   @media (max-width: 923px) {
-    height: 3900px;
+    height: 3700px;
   }
 `;
 
 const WrapperAll = styled.div`
-  width: 1372px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 94%;
   height: 1968px;
   border-left: 1px solid #000000;
   border-right: 1px solid #000000;
-  margin-left: 35px;
+
   @media (max-width: 1348px) {
     height: 2468px;
   }
   @media (max-width: 923px) {
-    height: 3900px;
+    height: 3700px;
   }
 `;
 

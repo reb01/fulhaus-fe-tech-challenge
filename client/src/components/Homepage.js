@@ -10,7 +10,7 @@ function Homepage() {
   return (
     <Wrapper>
       <ImageBanner>
-        <img src={logo} alt="Logo" />
+        <Image src={logo} alt="Logo" />
       </ImageBanner>
       <CTA />
       <Products />
@@ -23,11 +23,32 @@ export default Homepage;
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  width: 94vw;
+
+  /* width: 100%; */
+`;
+
+const Image = styled.img`
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 94vw;
+  /* width: 100%; */
 `;
 const ImageBanner = styled.div`
-  width: 1372px;
-  height: 628px;
-  @media (max-width: 1348px) {
+  width: 93vw;
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* width: 100%;
+  display: flex; */
+
+  /* justify-content: center;
+  align-items: center; */
+  /* width: 100vw;
+
+  /* @media (max-width: 1348px) {
     width: 872px;
-  }
+  } */
 `;
