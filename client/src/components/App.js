@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Homepage from "./Homepage";
-import CartDrawerView from "./CartItem";
+
 import GlobalStyles from "../GlobalStyles";
 import Navbar from "./Navbar";
 import styled from "styled-components";
@@ -20,9 +20,6 @@ const App = () => {
             <Switch>
               <Route exact path="/">
                 <Homepage />
-              </Route>
-              <Route exact path="/cart">
-                <CartDrawerView />
               </Route>
             </Switch>
           </WrapperAll>
@@ -41,18 +38,13 @@ const Wrapper = styled.div`
   width: 1440px;
   height: 1968px;
   background: #f7efe7;
-`;
-const PanelDiv = styled.div`
-  width: 100px;
-`;
-const ButtonDiv = styled.div`
-  width: 100px;
-`;
-const Div = styled.div`
-  width: 100px;
-`;
-const PanelContent = styled.div`
-  width: 100px;
+
+  @media (max-width: 1348px) {
+    height: 2468px;
+  }
+  @media (max-width: 923px) {
+    height: 3900px;
+  }
 `;
 
 const WrapperAll = styled.div`
@@ -61,6 +53,12 @@ const WrapperAll = styled.div`
   border-left: 1px solid #000000;
   border-right: 1px solid #000000;
   margin-left: 35px;
+  @media (max-width: 1348px) {
+    height: 2468px;
+  }
+  @media (max-width: 923px) {
+    height: 3900px;
+  }
 `;
 
 const Button = styled.button`

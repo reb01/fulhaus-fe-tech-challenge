@@ -80,7 +80,7 @@ export default Navbar;
 const NavbarWrapper = styled.div`
   position: fixed;
   display: flex;
-  width: 1440px;
+  width: 100vw;
   height: 80px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -95,6 +95,9 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   height: 2000px;
+  /* @media (max-width: 1440px) {
+    width: 600px;
+  } */
 `;
 const ItemWrapper = styled.div`
   width: 546px;
@@ -117,6 +120,9 @@ const NavbarText = styled.div`
   display: flex;
   align-items: center;
   color: #000000;
+  @media (max-width: 690px) {
+    font-size: 26px;
+  }
 `;
 const Button = styled.button`
   width: 150px;
@@ -129,6 +135,11 @@ const Button = styled.button`
   background: #000000;
   padding: 0;
   border: none;
+  @media (max-width: 690px) {
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+  }
 `;
 const InsideButton = styled.div`
   margin-top: 3px;
@@ -143,6 +154,9 @@ const InsideButton = styled.div`
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  @media (max-width: 690px) {
+    font-size: 20px;
+  }
 `;
 
 const Totals = styled.div`

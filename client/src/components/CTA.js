@@ -20,7 +20,7 @@ export default CTA;
 
 const CTAWRrapper = styled.div`
   border-top: 1px solid black;
-  width: 1370px;
+  width: 1372px;
   height: 316px;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,10 @@ const CTAWRrapper = styled.div`
   justify-content: center;
   background: #003941;
   margin-bottom: 47px;
+
+  @media (max-width: 1370px) {
+    width: 100vw;
+  }
 `;
 const CTAText = styled.div`
   width: 768px;
@@ -41,6 +45,12 @@ const CTAText = styled.div`
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  @media (max-width: 900px) {
+    font-size: 70px;
+  }
+  @media (max-width: 500px) {
+    font-size: 50px;
+  }
 `;
 const CTAButton = styled.button`
   width: 150px;

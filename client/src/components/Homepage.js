@@ -27,4 +27,7 @@ const Wrapper = styled.div`
 const ImageBanner = styled.div`
   width: 1372px;
   height: 628px;
+  @media (max-width: 1348px) {
+    width: 872px;
+  }
 `;
