@@ -41,9 +41,8 @@ const Wrapper1 = styled.div`
   display: flex;
   align-content: center;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 95vw;
   justify-content: center;
-  align-items: center;
 `;
 
 const Images = styled.img`
